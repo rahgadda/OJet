@@ -28,5 +28,5 @@
       "esnext.asynciterable"
     ]
   },
-  "include": ["./src/typescripts/ts/**/*"]
+  "include": ["./src/ts/**/*"]
 }
