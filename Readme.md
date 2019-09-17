@@ -65,3 +65,5 @@
 ## Appendix
 
 - Reference
+  - Tutorial
+    - [Awesome Oracle JET](https://github.com/JohnRSim/awesome-jet)
