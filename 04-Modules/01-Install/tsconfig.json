@@ -1,0 +1,32 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./src/js/viewModels",
+    "allowJs": false,
+    "alwaysStrict": false,
+    "target": "es5",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "module": "amd",
+    "checkJs": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "ojs/*": ["./node_modules/@types/oracle__oraclejet/*"]
+    },
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.core",
+      "es2015.collection",
+      "es2015",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": ["./src/typescripts/ts/**/*"]
+}
