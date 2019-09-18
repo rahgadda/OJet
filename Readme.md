@@ -3,6 +3,7 @@
 ## Table of Content
 
 - [Overview](#Overview)
+- [Architecture](#Architecture)
 - [Installation](#Installation)
 - [Modules](#Modules)
 - [Appendix](#Appendix)
