@@ -108,11 +108,13 @@
     ```sh
     ojet create --template=navdrawer Demo-01
     cd Demo-01
-    # Copy and paste unizp content of  04-Modules\01-Install\jet-webpack.zip
     npm i @types/oracle__oraclejet text-loader requirejs-text
-    # Copy 04-Modules\01-Install\tsconfig.json
+    # Copy 00-Install\tsconfig.json
+    ojet serve
+
+    # If you wanted to use Webpack then change index.html and update with bundle.js
+    # Copy and paste unizp content of 00-Install\jet-webpack.zip and run index.html
     webpack
-    # Change index.html and update with bundle.js
     ```
 
 ---
