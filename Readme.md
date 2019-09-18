@@ -106,15 +106,16 @@
   - Creating a WebApp using Oracle Jet - Typescript and Webpack
 
     ```sh
+    # With ojet cli
     ojet create --template=navdrawer Demo-01
     cd Demo-01
     npm i @types/oracle__oraclejet text-loader requirejs-text
     # Copy 00-Install\tsconfig.json
     ojet serve
 
-    # If you wanted to use Webpack then change index.html and update with bundle.js
-    # Copy and paste unizp content of 00-Install\jet-webpack.zip and run index.html
+    # If you wanted to use Webpack unizp content of 00-Install\jet-webpack.zip and copy and paste in the root of the folder
     webpack
+    # change index.html and update with bundle.js and run index.html
     ```
 
 ---
