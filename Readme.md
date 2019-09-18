@@ -88,7 +88,7 @@
 
     # Install Oracle Jet CLI and associated libraries
     # For specific version use npm install -g @oracle/ojet-cli@~6.0.0
-    npm install -g @oracle/ojet-cli cordova webpack webpack-cli text-loader typescript
+    npm install -g @oracle/ojet-cli cordova webpack webpack-cli  typescript
 
     # Verification of Ojet CLI
     npm list -g ojet-cli
@@ -103,13 +103,13 @@
     npm uninstall -g @oracle/ojet-cli
     ```
 
-  - Creating a WebApp using Oracle Jet
+  - Creating a WebApp using Oracle Jet - Typescript and Webpack
 
     ```sh
     ojet create --template=navdrawer Demo-01
     cd Demo-01
     # Copy and paste unizp content of  04-Modules\01-Install\jet-webpack.zip
-    npm i @types/oracle__oraclejet
+    npm i @types/oracle__oraclejet text-loader requirejs-text
     # Copy 04-Modules\01-Install\tsconfig.json
     webpack
     # Change index.html and update with bundle.js
