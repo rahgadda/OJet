@@ -86,7 +86,6 @@
     vi ~/.bash_profile
       # Add below to path
       export PATH=/scratch/jet/.npm-global/bin:$PATH
-
     source ~/.bash_profile
 
     # Install Oracle Jet CLI and associated libraries. For specific version use npm install -g @oracle/ojet-cli@~6.0.0
@@ -108,7 +107,7 @@
   - Creating a WebApp using Oracle Jet - Typescript and Webpack
 
     ```sh
-    # With ojet cli
+    # Running WebApp with ojet cli
     ojet create --template=navdrawer Demo-01
     cd Demo-01
     npm i @types/oracle__oraclejet text-loader requirejs-text
