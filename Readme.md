@@ -118,7 +118,7 @@
 
     # If you wanted to use Webpack unizp content of 00-Install\jet-webpack.zip and copy and paste in the root of the folder
     webpack
-    # change index.html and update with bundle.js and run index.html
+    # Change index.html and update with bundle.js and run index.html
     ```
 
 ---
