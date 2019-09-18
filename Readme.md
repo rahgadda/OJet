@@ -62,12 +62,15 @@
     # Configuring Proxy
     export http_proxy="http://<ip>:<port>"
     export https_proxy="http://<ip>:<port>"
+
     # Install Node.js
     wget https://yum.oracle.com/repo/OracleLinux/OL7/developer_nodejs10/x86_64/getPackage/nodejs-10.16.3-1.0.1.el7.x86_64.rpm
     sudo rpm -ivh nodejs-10.16.3-1.0.1.el7.x86_64.rpm
+
     # Set Proxy
     npm config set proxy http://<ip>:<port>
     npm config set https-proxy http://<ip>:<port>
+
     # Delete Proxy
     npm config rm proxy
     npm config rm https-proxy
@@ -76,7 +79,7 @@
   - Installing Oracle Jet
 
     ```sh
-    # Changing Node Global
+    # Changing Node Global Path
     sudo su
     mkdir /scratch/jet/.npm-global
     npm config set prefix '/scratch/jet/.npm-global'
@@ -86,8 +89,7 @@
 
     source ~/.bash_profile
 
-    # Install Oracle Jet CLI and associated libraries
-    # For specific version use npm install -g @oracle/ojet-cli@~6.0.0
+    # Install Oracle Jet CLI and associated libraries. For specific version use npm install -g @oracle/ojet-cli@~6.0.0
     npm install -g @oracle/ojet-cli cordova webpack webpack-cli  typescript
 
     # Verification of Ojet CLI
@@ -110,6 +112,7 @@
     ojet create --template=navdrawer Demo-01
     cd Demo-01
     npm i @types/oracle__oraclejet text-loader requirejs-text
+
     # Copy 00-Install\tsconfig.json
     ojet serve
 
