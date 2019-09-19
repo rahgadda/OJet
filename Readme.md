@@ -121,6 +121,12 @@
     # Change index.html and update with bundle.js and run index.html
     ```
 
+  - Creating Hello World
+
+    - Navigate `03-Examples\01-HelloWorld` and copy deliverable into src folder.
+    - Create two terminals. In first, run `tsc --watch` to convert Typescript to Javascript. In second, run `ojet serve` or `webpack` based on you configuration. The Dashboard tab will be updated as below
+      ![](01-Images\04-HelloWorld.png)
+
 ---
 
 ## Modules
