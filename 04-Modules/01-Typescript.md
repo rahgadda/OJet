@@ -26,12 +26,15 @@
 ### Installation
 
 - Install Node.js from [here](https://nodejs.org)
-- Install typescript using `npm i -g typescript`
+- Install typescript using `npm i -g typescript`. During this tutorial typescript version was **v3.6**.
 - To convert a file from **.ts** to **.js** run `tsc <file.ts>`
   ![](..\01-Images\06-Compilation.png)
+- Typescript has good support for VSCode.
 
 ---
 
 ### Modules
+
+-
 
 ---
