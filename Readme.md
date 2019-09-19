@@ -131,6 +131,12 @@
 
 ## Modules
 
+- Below are the different features to be known for understanding Oracle JET.
+  - Typescript
+  - Require
+  - Knockout
+  - Layouts
+
 ---
 
 ## Appendix
