@@ -4,7 +4,7 @@
 
 - TypeScript is a typed super set of JavaScript that compiles to plain JavaScript.
 
-  ![](..\01-Images\05-Typescript.png)
+  ![](../01-Images/05-Typescript.png)
 
 - TypeScript is pure object oriented with classes, interfaces and statically typed like C# or Java.
 - Compiled TypeScript can be consumed from any JavaScript code.
@@ -28,7 +28,7 @@
 - Install Node.js from [here](https://nodejs.org)
 - Install typescript using `npm i -g typescript`. During this tutorial typescript version was **v3.6**.
 - To convert a file from **.ts** to **.js** run `tsc <file.ts>`
-  ![](..\01-Images\06-Compilation.png)
+  ![](../01-Images/06-Compilation.png)
 - Typescript has good support for VSCode.
 
 ---
