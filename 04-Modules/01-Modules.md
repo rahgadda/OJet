@@ -15,5 +15,5 @@
 
 ### Examples
 
-- This [example](03-Examples\02-Modularity) details how Oracle Jet uses Require.js to achieve modularity. View developer console and Network tab to see the difference before and after applications.
+- This [example](/03-Examples/02-Modularity) details how Oracle Jet uses Require.js to achieve modularity. View developer console and Network tab to see the difference before and after applications.
 - If we create a js file that is not referenced during initial load then require.js will not load the js until is referenced.
