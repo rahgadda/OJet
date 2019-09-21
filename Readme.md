@@ -132,9 +132,9 @@
 ## Modules
 
 - Below are the different features to be known for understanding Oracle JET.
+  - [Require]()
+  - [Knockout]()
   - [Typescript](04-Modules\01-Typescript.md)
-  - Require
-  - Knockout
   - Layouts
 
 ---
