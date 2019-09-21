@@ -113,17 +113,17 @@
     cd Demo-01
     npm i @types/oracle__oraclejet text-loader requirejs-text
 
-    # Copy 00-Install\tsconfig.json
+    # Copy 00-Install/tsconfig.json
     ojet serve
 
-    # If you wanted to use Webpack unizp content of 00-Install\jet-webpack.zip and copy and paste in the root of the folder
+    # If you wanted to use Webpack unizp content of 00-Install/jet-webpack.zip and copy and paste in the root of the folder
     webpack
     # Change index.html and update with bundle.js and run index.html
     ```
 
   - Creating Hello World
 
-    - Navigate `03-Examples\01-HelloWorld` and copy deliverable into src folder.
+    - Navigate `03-Examples/01-HelloWorld` and copy deliverable into src folder.
     - Create two terminals. In first, run `tsc --watch` to convert Typescript to Javascript. In second, run `ojet serve` or `webpack` based on you configuration. The Dashboard tab will be updated as below
       ![](/01-Images/04-HelloWorld.png)
 
