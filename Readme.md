@@ -125,16 +125,16 @@
 
     - Navigate `03-Examples\01-HelloWorld` and copy deliverable into src folder.
     - Create two terminals. In first, run `tsc --watch` to convert Typescript to Javascript. In second, run `ojet serve` or `webpack` based on you configuration. The Dashboard tab will be updated as below
-      ![](01-Images\04-HelloWorld.png)
+      ![](/01-Images/04-HelloWorld.png)
 
 ---
 
 ## Modules
 
 - Below are the different features to be known for understanding Oracle JET.
-  - [Modules](\04-Modules\01-Modules.md)
-  - [Knockout](\04-Modules\02-Knockout.md)
-  - [Typescript](\04-Modules\01-Typescript.md)
+  - [Modules](/04-Modules/01-Modules.md)
+  - [Knockout](/04-Modules/02-Knockout.md)
+  - [Typescript](/04-Modules/01-Typescript.md)
   - Layouts
 
 ---
