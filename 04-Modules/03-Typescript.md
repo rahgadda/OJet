@@ -34,6 +34,7 @@
 - To run node.js modules code in typescript install `npm install -g ts-node`.
 
   ```typescript
+
   // main.ts
   console.log("Hello world");
 
@@ -68,6 +69,7 @@
 
   ```typescript
   let someValue: any = "this is a string";
+
   //Type casting is done in two ways using <> or as keyword
   let strLength: number = (<string>someValue).length;
   let strLength: number = (someValue as string).length; // prefered for jsx
