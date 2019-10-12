@@ -94,11 +94,12 @@
 - #### Variable Declaration:
 
   - There are three keyword to declare variables in Typescript `let`, `var` and `const`.
-    | SNO | Keyword | Description |
-    |-----|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | 1 | var | var declarations are accessible anywhere within their containing function, module, namespace, or global scope. |
-    | 2 | let | let declarations are lexical-scoping or block-scoping and are not visible outside of their nearest containing block or for-loop. Re-declaration of variable is not supported. A variable should be declared before it is used. |
-    | 3 | const | They are like let declarations but cannot be changed |
+
+    | SNO | Keyword | Description                                                                                                                                                                                                                    |
+    | --- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | 1   | var     | var declarations are accessible anywhere within their containing function, module, namespace, or global scope.                                                                                                                 |
+    | 2   | let     | let declarations are lexical-scoping or block-scoping and are not visible outside of their nearest containing block or for-loop. Re-declaration of variable is not supported. A variable should be declared before it is used. |
+    | 3   | const   | They are like let declarations but cannot be changed                                                                                                                                                                           |
 
   -
 
