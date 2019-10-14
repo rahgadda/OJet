@@ -20,6 +20,16 @@
 - Typescript uses features like Modules, classes inline to EcmaScript specifications. Typescript also adds additional features like generics and type annotations that aren’t a part of the EcmaScript.
 - JavaScript is an interpreted language. Identification of errors can be done based on code execution. Unlike JavaScript, Typescript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors.
 - TypeScript supports type definitions for existing JavaScript libraries. TypeScript Definition file (with **.d.ts** extension) provides definition for external JavaScript libraries.
+- TypeScript is internally divided into five main layers that are highlighted using colors:
+
+  - **Compiler/Transpiler**:  It performs the parsing, type checking, and transformation of your TypeScript code to JavaScript code.
+  - **Language Services**: Helps editors for better assistance like IntelliSense or automated refactoring
+  - **Standalone TS Complier**: Handle reading and writing files for supported engines like Node.js
+  - **TS Server**: Node executable that encapsulates TypeScript compiler and Language Services and exposes as json.
+  - **VS**: Visual Studio
+  - **Shim**: It is a library that brings a new API to an older environment. A **polyfill** is shim for browser, it typically checks if a browser supports an API. If it doesn’t, the polyfill installs its own implementation.
+
+    ![](../01-Images/07-Architecture.png)
 
 ---
 
