@@ -19,7 +19,7 @@
 - TypeScript comes with an optional static typing and type inference system through the TLS (TypeScript Language Service).
 - Typescript uses features like Modules, classes inline to EcmaScript specifications. Typescript also adds additional features like generics and type annotations that aren’t a part of the EcmaScript.
 - JavaScript is an interpreted language. Identification of errors can be done based on code execution. Unlike JavaScript, Typescript transpiler provides the error-checking feature. TypeScript will compile the code and generate compilation errors, if it finds some sort of syntax errors.
-- TypeScript supports type definitions for existing JavaScript libraries. TypeScript Definition file (with **.d.ts** extension) provides definition for external JavaScript libraries.
+- TypeScript supports type definitions for existing JavaScript libraries using [type definitions](http://definitelytyped.org/). TypeScript Definition file (with **.d.ts** extension) provides definition for external JavaScript libraries.
 - TypeScript is internally divided into five main layers that are highlighted using colors:
 
   - **Compiler/Transpiler**:  It performs the parsing, type checking, and transformation of your TypeScript code to JavaScript code.
