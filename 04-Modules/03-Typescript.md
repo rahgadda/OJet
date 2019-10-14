@@ -44,7 +44,6 @@
 - To run node.js modules code in typescript install `npm install -g ts-node`.
 
   ```typescript
-
   // main.ts
   console.log("Hello world");
 
