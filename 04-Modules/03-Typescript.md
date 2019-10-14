@@ -49,49 +49,48 @@
 
   - During variable declaration it is mandatory to define datatype of variables in Typescript.
 
-  ```typescript
-  var num: number =5;
-  num = "Sample" \\ This leads to Error
-
-  ```
+    ```typescript
+    var num: number =5;
+    num = "Sample" \\ This leads to Error
+    ```
 
   - Typescript allows to support more than one datatype to a variable. This is called **union type definition**.
 
-  ```typescript
-  let code: string | number;
-  code = 123; // OK
-  code = "ABC"; // OK
-  code = false; // Compiler Error
-  ```
+    ```typescript
+    let code: string | number;
+    code = 123; // OK
+    code = "ABC"; // OK
+    code = false; // Compiler Error
+    ```
 
-- Template String are used to define values in multiple lines. They are defined using follow format \``${ expr }`\`
-- Type assertion are like typecasting in other languages
+  - Template String are used to define values in multiple lines. They are defined using follow format \``${ expr }`\`
+  - Type assertion are like typecasting in other languages
 
-  ```typescript
-  let someValue: any = "this is a string";
+    ```typescript
+    let someValue: any = "this is a string";
 
-  //Type casting is done in two ways using <> or as keyword
-  let strLength: number = (<string>someValue).length;
-  let strLength: number = (someValue as string).length; // prefered for jsx
-  ```
+    //Type casting is done in two ways using <> or as keyword
+    let strLength: number = (<string>someValue).length;
+    let strLength: number = (someValue as string).length; // prefered for jsx
+    ```
 
-- Different type in typescript
+  - Different type in typescript
 
-  | SNO | Type      | Description                                                                                                                                                                                                                                                                                                                                                                              |
-  | --- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | 1   | number    | Used to define both integers and floating point numbers                                                                                                                                                                                                                                                                                                                                  |
-  | 2   | string    | Used to define character and strings                                                                                                                                                                                                                                                                                                                                                     |
-  | 3   | boolean   | true or false                                                                                                                                                                                                                                                                                                                                                                            |
-  | 4   | undefined | This is a default value set to variables that are not defined or explicitly set with any value. This is also the value returned by function with void or no return values.                                                                                                                                                                                                               |
-  | 5   | null      | This is used to indicate value is unavailable. To determine null or undefined of a variable of function call used below console.log(null == undefined) //true console.log(null == null) //true                                                                                                                                                                                           |
-  | 6   | any       | Used to store any data type. Expressions involving any are not type checked.                                                                                                                                                                                                                                                                                                             |
-  | 7   | void      | This represents "nothing", can be used as a function return value.                                                                                                                                                                                                                                                                                                                       |
-  | 8   | never     | This is used to indicate the values that will never occur. The difference between never and void is void type can have undefined or null as a value whereas never cannot have any value. If we try to assign variable to a function with return values as never then typescript will through an error let nothing: never = null; // Error: Type 'null' is not assignable to type 'never' |
-  | 9   | enum      | Defines variable that does not change. It is an easy way of giving more friendly names to sets of numeric values like { Red = 0, Blue, Green }                                                                                                                                                                                                                                           |
-  | 10  | Array     | Store Arrays of specific datatype. There two ways of defining Arrays number[] - array of numbers Array<string> - array of strings                                                                                                                                                                                                                                                        |
-  | 11  | Tuples    | Tuples have a fixed number of elements with specific types. [boolean, string] - Tuple of boolean and a String                                                                                                                                                                                                                                                                            |
-  | 12  | Function  | Must specify types for the parameters and return value (param: number) => string - Takes number as input and returns a String                                                                                                                                                                                                                                                            |
-  | 13  | object {} | Used to define variables and methods/functions                                                                                                                                                                                                                                                                                                                                           |
+    | SNO | Type      | Description                                                                                                                                                                                                                                                                                                                                                                              |
+    | --- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | 1   | number    | Used to define both integers and floating point numbers                                                                                                                                                                                                                                                                                                                                  |
+    | 2   | string    | Used to define character and strings                                                                                                                                                                                                                                                                                                                                                     |
+    | 3   | boolean   | true or false                                                                                                                                                                                                                                                                                                                                                                            |
+    | 4   | undefined | This is a default value set to variables that are not defined or explicitly set with any value. This is also the value returned by function with void or no return values.                                                                                                                                                                                                               |
+    | 5   | null      | This is used to indicate value is unavailable. To determine null or undefined of a variable of function call used below console.log(null == undefined) //true console.log(null == null) //true                                                                                                                                                                                           |
+    | 6   | any       | Used to store any data type. Expressions involving any are not type checked.                                                                                                                                                                                                                                                                                                             |
+    | 7   | void      | This represents "nothing", can be used as a function return value.                                                                                                                                                                                                                                                                                                                       |
+    | 8   | never     | This is used to indicate the values that will never occur. The difference between never and void is void type can have undefined or null as a value whereas never cannot have any value. If we try to assign variable to a function with return values as never then typescript will through an error let nothing: never = null; // Error: Type 'null' is not assignable to type 'never' |
+    | 9   | enum      | Defines variable that does not change. It is an easy way of giving more friendly names to sets of numeric values like { Red = 0, Blue, Green }                                                                                                                                                                                                                                           |
+    | 10  | Array     | Store Arrays of specific datatype. There two ways of defining Arrays number[] - array of numbers Array<string> - array of strings                                                                                                                                                                                                                                                        |
+    | 11  | Tuples    | Tuples have a fixed number of elements with specific types. [boolean, string] - Tuple of boolean and a String                                                                                                                                                                                                                                                                            |
+    | 12  | Function  | Must specify types for the parameters and return value (param: number) => string - Takes number as input and returns a String                                                                                                                                                                                                                                                            |
+    | 13  | object {} | Used to define variables and methods/functions                                                                                                                                                                                                                                                                                                                                           |
 
 - #### Variable Declaration:
 
@@ -103,6 +102,24 @@
     | 2   | let     | let declarations are lexical-scoping or block-scoping and are not visible outside of their nearest containing block or for-loop. Re-declaration of variable is not supported. A variable should be declared before it is used. |
     | 3   | const   | They are like let declarations but cannot be changed                                                                                                                                                                           |
 
-  -
+  - Typescript support ES6 destructuring assignment syntax
+
+    ```typescript
+    var a, b, rest;
+    [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+    console.log(a); // 10
+    console.log(b); // 20
+    console.log(rest); // [30, 40, 50]
+    ```
+
+  - Typescript support ES6 spread operator
+
+    ```typescript
+    let first = [1, 2];
+    let second = [3, 4];
+    let bothPlus = [0, ...first, ...second, 5];
+    console.log(bothPlus); // [1,2,3,4,5]
+    ```
 
 ---
