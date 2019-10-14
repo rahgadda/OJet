@@ -27,7 +27,7 @@
 
 - Install Node.js from [here](https://nodejs.org)
 - Install typescript using `npm i -g typescript`. During this tutorial typescript version was **v3.6**.
-- To convert a file from **.ts** to **.js** run `tsc <file.ts>`
+- To convert a file from **.ts** to **.js** run `tsc <file.ts>`  
   ![](../01-Images/06-Compilation.png)
 - Typescript has good support for VSCode. Compilation options of typescript can be provided using `tsconfig.json`. A default file can be created using `tsc --init`.
 - The `tsconfig.json` file should be placed at the root of TypeScript project so that it be directly used by tsc compiler.
