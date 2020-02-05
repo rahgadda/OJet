@@ -73,6 +73,12 @@
     ```
 
   - Template String are used to define values in multiple lines. They are defined using follow format \``${ expr }`\`
+    ```typescript
+    const name: String = 'Rahul';
+    const age: number = 33;
+    let message: string = `My name is ${ name } and my age is ${ age }`;
+    console.log(message);       //My name is Rahul and my age is 33
+    ```
   - Type assertion are like typecasting in other languages
 
     ```typescript
